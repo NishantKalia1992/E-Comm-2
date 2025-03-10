@@ -1,0 +1,34 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: E-comm-2
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/E-commerce
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: nishantkalia71001@gmail.com
+    password: erou lbpd zruh guir
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  servlet:
+    multipart:
+      max-file-size:
+        10MB
+      max-request-size:
+        10MB
